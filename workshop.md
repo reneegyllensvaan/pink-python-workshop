@@ -1,83 +1,14 @@
 # PP AMQP/Python Workshop, Nov 2020
 
-## Step 0. Setup
-In preparation for the workshop, you will need access to a computer with a
-working Python runtime and package manager installed. In addition, you will
-need to install the `pika` package using that package manager.
-
-If you have not done this previously, this is what you will need to do:
-  - First, go to [this link](FIXME: Conda link) and download the Anaconda
-    software distribution installer for your operating system.
-    - If you are on a linux-based operating system (including the Windows
-      Subsystem for Linux), you can probably find it in your package manager's
-      repository under `conda` or `anaconda`. On most distributions, you can
-      install `python` (and possibly `python-pip`) instead, and then skip to
-      the final step.
-  - Run the downloaded installer, following the recommended settings.
-  - Open a new terminal window and run the `conda` command in it. This should
-    print a long-ish message to your terminal window.
-  - Run the command `conda activate` in your terminal window. On most systems,
-    this will cause something like `(base)` to appear after you type a command.
-  - Run `pip install pika`. This will install the package we're going to use to
-    send data during the workshop.
-
-Finally, you will need a text editor to edit source code with. At the workshop,
-we are going to use Visual Studio Code (this is not the same as Visual Studio).
-You can install VSCode at [https://example.com](FIXME: install link). The
-workshop will be editor-independent, if you feel more comfortable with another
-editor you are very welcome to use it.
-
-### Troubleshooting
-FIXME:
-  - Add some links for Windows:
-    - How to check and set `$PATH`
-    - Look up which shells are pre-installed and which one is easiest to use,
-      also if conda provides a terminal wrapper. Check if this is a potential
-      solution to path issues
-  - For OS X:
-    - Add some troubleshooting steps for what happens if the conda installer
-      isn't appending to people's zshrc/bashrc to set the environment conf.
-    - Maybe add steps to debug path issues, or at least how to call the shell
-      environment hook yourself.
-
-
-## Step 1. Introductions
-(FIXME: Add some hook for presenting mentors and the format. Also finalize
-that, I guess?)
-
-[SLIDE: Bio]
-
-We'll be building a small chat application today. We will be building it using
-the Python programming language. Python is an _interpreted_ language, which
-means it has two parts. There's the Python language, which is the grammar and
-semantics of the code that we write. Python code doesn't mean anything to
-computers on its own, though, which means it has to be transformed by a program
-into some format that computers understand. The other class of languages are
-_compiled_ languages, which is when a program (known as a compiler) translates
-your human-readable code to machine code.
-
-With an interpreted language, the transformation step is also the excution step
--- the interpreter reads a line of your code, and performs whatever computation
-or effect it would cause. This also means that not only is Python a language,
-but the interpreter (required to run our code) is itself a program. While this
-isn't great for performance, it has a number of enormous benefits for us as
-developers. We can write any Python code and instantly see the result of
-executing it, giving us a really tight feedback loop.
-
-### Goals
-This workshop will not teach you Python, because the Python language does not
-fit into a workshop. It will be structured a more of a "guided tour", and as
-such will focus more on giving you as a participant a feel for the language
-(and maybe computer programming in general), using a novel project as a basis.
-Learning a programming language, especially if it's your first, is a
-significant investment of time, effort, and frustration.
+## Step 1. Introduction
+(Read the slides and wing it)
 
 
 ## Step 2.
-First, we'll open a new terminal window. If you followed the setup instructions
-using `conda`, you'll first run `conda activate`. Next, we will start the
-interpreter with the `python` command. Let's start with some basic arithmetic
-expressions:
+Let's start by trying out the Python interpreter REPL. First, we'll open a new
+terminal window. If you followed the setup instructions using `conda`, you'll
+first run `conda activate`. Next, we will start the interpreter with the
+`python` command. Let's start with some basic arithmetic expressions:
 
 _(reader's note: lines starting with `#=>` are output, lines that do not are
 input we've typed)_
@@ -728,4 +659,5 @@ it out in action!
 
 
 ## Wrap-up
-(FIXME: come up with some nice closing words here)
+(FIXME: come up with some nice closing words here, or just wing it again. I
+believe in you (me))
